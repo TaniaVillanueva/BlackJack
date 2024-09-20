@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blackjack</title>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
+</head>
+<body style="background-color: green;">
+    <header class = "titulo">
+         Blackjack 
+    </header>
+
+    <div class="row mt-2">
+        <div class="col text-center" style="background-color: green;">
+            <button class="btn btn-danger">Nuevo Juego</button>
+            <button class="btn btn-primary">Pedir Carta</button>
+            <button class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+    <div class="row container" style="background-color: green;">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small></h1>
+            <div id="jugador-cartas">
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <!-- <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row container mt-2" style="background-color: green;">
+        <div class="col">
+            <h1>Computadora - <small>0</small></h1>
+            <div id="computadora-cartas">
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <!--
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt="">
+                <img class="carta" src="assets/cartas/10C.png" alt=""> -->
+            </div>
+        </div>
+    </div>
     <script src="assets/js/juego.js"></script>
 </body>
 </html>
