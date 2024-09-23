@@ -51,7 +51,23 @@ const pedirCarta = () =>{
 }
 
 
-pedirCarta();
+const valorCarta = (carta) => {
+    // if( isNaN(valor)){
+        
+    //    valor = (valor === 'A')? 11 : 10;
 
+    // }else{
+    //    valor = valor * 1;
+    // }
+
+    const valor = carta.substring(0, carta.length - 1);//Toma todos los valores ignorando el último valor de un string
+    return ( isNaN(valor)) ?
+            (valor === 'A') ? 11 : 10
+            : valor * 1;
+  
+}
+
+const valor = valorCarta(pedirCarta());
+console.log({ valor });
 
 
